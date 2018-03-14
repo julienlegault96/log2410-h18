@@ -28,7 +28,7 @@ Objet3DPart::~Objet3DPart(){
 Objet3DPart * Objet3DPart::cloner(void) const
 {
 	// Construire et retourner un nouvel objet identique a this
-	return  new Objet3DPart(*this);
+	return new Objet3DPart(*this);
 }
 
 // Conteneur vide d'enfant pour simplifier l'écriture des methodes
