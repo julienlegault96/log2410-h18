@@ -1,0 +1,24 @@
+﻿  Objet3DTransform.cpp
+x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(65): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(73): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(81): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(89): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(103): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(112): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(121): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(130): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(139): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(153): error C2059: erreur de syntaxe : '...'
+  Objet3DPart.cpp
+  Objet3DComposite.cpp
+x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(35): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(42): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(49): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(56): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(71): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(84): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(92): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(100): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(108): error C2059: erreur de syntaxe : '...'
+x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(122): error C2059: erreur de syntaxe : '...'
+  Génération de code en cours...
