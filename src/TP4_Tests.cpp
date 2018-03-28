@@ -71,7 +71,7 @@ void TP4_Tests::testComposite(){
 	m_objet.addChild(composit1);
 	m_objet.addChild(composit2);
 	m_objet.addChild(part4);
-	outToStream(m_objet, "m_objet   ", std::cout);
+	outToStream(m_objet, "m_objet", std::cout);
 }
 
 void TP4_Tests::testDecorator()
@@ -108,6 +108,8 @@ void TP4_Tests::outToStream(const AbsObjet3D& obj, std::string indent, std::ostr
 		for (; itero != obj.cend(); ++itero)
 			outToStream(*itero, extraIndent, o);
 	}
+	
 }
+
 
 

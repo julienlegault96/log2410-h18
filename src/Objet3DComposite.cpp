@@ -6,6 +6,9 @@
 ///////////////////////////////////////////////////////////
 
 #include "Objet3DComposite.h"
+#include <vector>
+
+using namespace std;
 
 Objet3DComposite::Objet3DComposite(){
 
@@ -70,9 +73,7 @@ Objet3DIterator_const Objet3DComposite::removeChild(Objet3DIterator_const iter)
 	// Effacer l'objet pointe par l'iterateur du vecteur des enfants
 	// retourner l'iterateur resultant de l'operation d'effacement
 	// A COMPLETER
-	m_objets.erase(iter);
-	return iter;
-	
+	return m_objets.erase(Objet3DContainer::const_iterator(iter));	
 }
 
 // Conteneur vide de triangles pour simplifier l'écriture des methodes
@@ -122,7 +123,8 @@ TriangleIterator_const Objet3DComposite::removeTriangle(TriangleIterator_const)
 	// Echoue silencieusement
 	// Constuire et retourner un iterateur constant apres la fin du contenant vide de triangle
 	// L'iterateur de fin doit etre fourni 2 fois pour construire l'iterateur sur les triangles
-	// A COMPLETERreturn TriangleIterator_const(empty_container.cend(), empty_container.cend());
+	// A COMPLETER
+	return TriangleIterator_const(empty_container.cend(), empty_container.cend());
 	
 }
 

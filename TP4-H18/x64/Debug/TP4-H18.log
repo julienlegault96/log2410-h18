@@ -1,24 +1,7 @@
-﻿  Objet3DTransform.cpp
-x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(65): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(73): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(81): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(89): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(103): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(112): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(121): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(130): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(139): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dtransform.cpp(153): error C2059: erreur de syntaxe : '...'
-  Objet3DPart.cpp
-  Objet3DComposite.cpp
-x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(35): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(42): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(49): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(56): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(71): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(84): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(92): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(100): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(108): error C2059: erreur de syntaxe : '...'
-x:\bureau\h-18\log2410-h18\src\objet3dcomposite.cpp(122): error C2059: erreur de syntaxe : '...'
+﻿  TP4_Tests.cpp
+  Objet3DTransform.cpp
   Génération de code en cours...
+  Ignoré... (aucune modification pertinente détectée)
+  TP4.cpp
+  TP4-H18.vcxproj -> X:\Bureau\H-18\log2410-h18\TP4-H18\x64\Debug\TP4-H18.exe
+  TP4-H18.vcxproj -> X:\Bureau\H-18\log2410-h18\TP4-H18\x64\Debug\TP4-H18.pdb (Partial PDB)
