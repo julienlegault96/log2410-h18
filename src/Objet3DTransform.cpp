@@ -108,7 +108,9 @@ TriangleIterator Objet3DTransform::triangle_begin()
 	// Injecte l'objet this comme transformation dans l'iterateur
 	// Retourne le resultat
 	// A COMPLETER
-	return m_objet_cible->triangle_begin();
+	auto it = m_objet_cible->triangle_begin();
+	it.setTransform(this);
+	return it;
 }
 
 TriangleIterator Objet3DTransform::triangle_end()
@@ -117,7 +119,10 @@ TriangleIterator Objet3DTransform::triangle_end()
 	// Injecte l'objet this comme transformation dans l'iterateur
 	// Retourne le resultat
 	// A COMPLETER
-	return m_objet_cible->triangle_end();
+
+	auto it = m_objet_cible->triangle_end();
+	it.setTransform(this);
+	return it;
 }
 
 TriangleIterator_const Objet3DTransform::triangle_cbegin() const
@@ -126,7 +131,9 @@ TriangleIterator_const Objet3DTransform::triangle_cbegin() const
 	// Injecte l'objet this comme transformation dans l'iterateur
 	// Retourne le resultat
 	// A COMPLETER
-	return m_objet_cible->triangle_cbegin();
+	auto it = m_objet_cible->triangle_cbegin();
+	it.setTransform(this);
+	return it;
 }
 
 TriangleIterator_const Objet3DTransform::triangle_cend() const
@@ -135,7 +142,9 @@ TriangleIterator_const Objet3DTransform::triangle_cend() const
 	// Injecte l'objet this comme transformation dans l'iterateur
 	// Retourne le resultat
 	// A COMPLETER
-	return m_objet_cible->triangle_cend();
+	auto it = m_objet_cible->triangle_cend();
+	it.setTransform(this);
+	return it;
 }
 
 void Objet3DTransform::addTriangle(const Triangle & tri)
