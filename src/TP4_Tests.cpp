@@ -49,6 +49,19 @@ void TP4_Tests::testComposite(){
 	Objet3DPart part4(t2);
 	part4.addTriangle(t4);
 	outToStream(part4, "part4   ", std::cout);
+	
+	// Ajout du test supplémentaires pour la question 3.2)
+	// Retrait de triangles	
+	TriangleIterator_const it1 = part2.triangle_cbegin();
+	TriangleIterator_const it2 = part4.triangle_cbegin();	
+	//retrait du deuxieme element du conteneur part2
+	part2.removeTriangle(++it1);	
+	//retrait du premier element du conteneur part4
+	part4.removeTriangle(it2);	
+	std::cout << std::endl << "Conteneur Part2 mis a jour suite au retrait du deuxieme element" << std::endl;
+	outToStream(part2, "part2   ", std::cout);
+	std::cout << std::endl << "Conteneur Part4 mis a jour suite au retrait du premier element" << std::endl;
+	outToStream(part4, "part4   ", std::cout);
 
 	// Definir un objet composite
 	std::cout << std::endl << "=========================" << std::endl;
