@@ -8,8 +8,9 @@ Objet3DTransform & TransformStack::getCurrent(void)
 	// Si la pile de transformation est vide faire
 	//    - Pousser une transformation vide sur la pile
 	// Retourner la derniere transformation de la pile
-
-	return Objet3DTransform();
+	if (m_transforms.size() == 0)
+		m_transforms.push_back(std::unique_ptr<Objet3DTransform>(new Objet3DTransform()));
+	return *m_transforms.back();
 }
 
 void TransformStack::pushCurrent(void)
@@ -17,12 +18,13 @@ void TransformStack::pushCurrent(void)
 	// Si la pile de transformation n'est pas vide faire
 	//    - Pousser la dernière transformation sur la pile
 	// Sinon faire
-	//    - Pousser une transformation vide sur la pile
+	//    - Pousser une transformation vide sur la pile	
+
 }
 
 void TransformStack::push(const Objet3DTransform & t)
 {
-	// Pousser la transformation recue en parametre sur la pile
+	// Pousser la transformation recue en parametre sur la pile	
 }
 
 void TransformStack::pop(void)
