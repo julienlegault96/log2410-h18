@@ -9,8 +9,10 @@ Objet3DTransform & TransformStack::getCurrent(void)
 	// Si la pile de transformation est vide faire
 	//    - Pousser une transformation vide sur la pile
 	// Retourner la derniere transformation de la pile
-	if (m_transforms.size() == 0)
+	if (m_transforms.empty())
+	{
 		m_transforms.push_back(std::unique_ptr<Objet3DTransform>(new Objet3DTransform()));
+	}
 	return *m_transforms.back();
 }
 
