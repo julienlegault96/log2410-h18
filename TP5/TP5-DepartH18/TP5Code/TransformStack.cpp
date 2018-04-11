@@ -2,6 +2,7 @@
 #include "Objet3DTransform.h"
 
 // Instancier le vecteur de stockage des transformations
+std::vector<std::unique_ptr<class Objet3DTransform>> TransformStack::m_transforms;
 
 Objet3DTransform & TransformStack::getCurrent(void)
 {
