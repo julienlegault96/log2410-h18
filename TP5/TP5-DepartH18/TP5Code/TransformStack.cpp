@@ -24,23 +24,26 @@ void TransformStack::pushCurrent(void)
 	//    - Pousser une transformation vide sur la pile		
 	if (!m_transforms.empty())
 	{
-		m_transforms.push_back(std::unique_ptr<Objet3DTransform>(new Objet3DTransform(getCurrent())));
+		auto p = std::make_unique<Objet3DTransform>(getCurrent());
+		m_transforms.push_back(std::move(p));
 	}
 	else
 	{
-		m_transforms.push_back(std::unique_ptr<Objet3DTransform>(new Objet3DTransform()));
+		getCurrent();
 	}
 }
 
 void TransformStack::push(const Objet3DTransform & t)
 {
 	// Pousser la transformation recue en parametre sur la pile
-	m_transforms.push_back(std::unique_ptr<Objet3DTransform>(new Objet3DTransform(t)));
+	auto p = std::make_unique<Objet3DTransform>(t);
+	m_transforms.push_back(std::move(p));
 }
 
 void TransformStack::pop(void)
 {
 	// Si la pile n'est pas vide faire
 	//    - Retirer la derniere transformation de sur la pile
-	m_transforms.pop_back();
+	if (!m_transforms.empty())
+		m_transforms.pop_back();
 }

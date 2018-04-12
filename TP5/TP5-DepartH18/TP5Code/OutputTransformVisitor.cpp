@@ -6,15 +6,12 @@ void OutputTransformVisitor::visit(Objet3DPart & obj)
 {
 	// Imprimer tous les triangles contenus dans l'objet
 	// Meme methode que OutputVisitor::visit(Objet3DPart& obj)
-	unsigned int indice = 0;
-	TriangleIterator it = obj.triangle_begin();
-	while (it != obj.triangle_end()) {
-		m_stream << m_indent
-			<< "T" << indice++ << ":"
-			<< "(" << it->s1() << ")" << "|"
-			<< "(" << it->s2() << ")" << "|"
-			<< "(" << it->s3() << ")" << std::endl;
-		it++;
+	int index = 0;
+
+	for (auto i = obj.triangle_cbegin(); i != obj.triangle_cend(); i++, index++)
+	{
+		m_stream << m_indent << "T" << index
+			<< ":" << i->s1() << " | " << i->s2() << " | " << i->s3() << std::endl;
 	}
 }
 
@@ -28,9 +25,8 @@ void OutputTransformVisitor::visit(Objet3DComposite & obj)
 	//     - Restaurer l'indentation
 	if (obj.begin() != obj.end()) {
 		m_indent += "   ";
-		m_stream << m_indent
-			<< "COMPOSITE:" << std::endl;
+		m_stream << m_indent << "COMPOSITE:" << std::endl;
 		TransformVisitor::visit(obj);
-		m_indent = m_indent.substr(3, m_indent.size());
+		m_indent = m_indent.substr(0, m_indent.length() - 3);
 	}
 }

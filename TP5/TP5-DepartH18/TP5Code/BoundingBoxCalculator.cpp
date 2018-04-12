@@ -13,6 +13,7 @@ BoundingBoxCalculator::BoundingBoxCalculator(void)
 	m_boite[0] = std::numeric_limits<float>::max(); //xmin
 	m_boite[2] = std::numeric_limits<float>::max(); //ymin
 	m_boite[4] = std::numeric_limits<float>::max(); //zmin
+
 	m_boite[1] = std::numeric_limits<float>::min(); //xmax
 	m_boite[3] = std::numeric_limits<float>::min(); //ymax
 	m_boite[5] = std::numeric_limits<float>::min(); //zmax
@@ -27,13 +28,34 @@ void BoundingBoxCalculator::visit(Objet3DPart & obj)
 	//    - Si une coordonnee est plus grande qu'une coordonnee max, faire:
 	//         - stoker la nouvelle coordonnee max
 
-	TriangleIterator it = obj.triangle_begin();
-	while (it != obj.triangle_end()) {	
-				if (it->s1().x < m_boite[0])
-					m_boite[0] = it->s1().x;
-				else if (it->s2().x < m_boite[0])
-					m_boite[0] = it->s1().x;
-				
-		it++;
+	for (auto i = obj.triangle_cbegin(); i != obj.triangle_cend(); i++)
+	{
+		auto sommets = i->sommets();
+		for (int j = 0; j < 3; j++)
+		{
+			auto coords = sommets[j].coords();
+			if (coords[0] < m_boite[0]) {
+				m_boite[0] = coords[0];
+			}
+
+			else if (coords[0] > m_boite[1])
+			{
+				m_boite[1] = coords[0];
+			}
+
+			if (coords[1] < m_boite[2]) {
+				m_boite[2] = coords[1];
+			}
+
+			else if (coords[1] > m_boite[3]) {
+				m_boite[3] = coords[1];
+			}
+			if (coords[2] < m_boite[4]) {
+				m_boite[4] = coords[2];
+			}
+			else if (coords[2] > m_boite[5]) {
+				m_boite[5] = coords[2];
+			}
+		}
 	}
 }
