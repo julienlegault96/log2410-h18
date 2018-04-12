@@ -149,6 +149,7 @@ void TP5_Tests::testVisiteurTransformOutput()
 	OutputTransformVisitor vis(std::cout);
 
 	// Tester le visiteur de sortie avec transformation
+	std::cout << std::endl << std::endl;
 	std::cout << "Tests du VISITEUR OutputTransformVisitor" << std::endl;
 	std::cout << "=========================" << std::endl << std::endl;
 	m_objet.accueillir(vis);
@@ -160,6 +161,7 @@ void TP5_Tests::testBoundingBoxCalculator()
 	BoundingBoxCalculator vis;
 
 	// Tester le visiteur de calcul de la boite englobante
+	std::cout << std::endl << std::endl;
 	std::cout << "Tests du VISITEUR BoundingBoxCalculator" << std::endl;
 	std::cout << "=========================" << std::endl << std::endl;
 	m_objet.accueillir(vis);

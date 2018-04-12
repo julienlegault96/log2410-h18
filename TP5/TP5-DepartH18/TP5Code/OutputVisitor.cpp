@@ -19,8 +19,8 @@ void OutputVisitor::visit(Objet3DPart & obj)
 		Sommet s3 = iter->s3();
 
 		m_stream << m_indent << "T" << compteur << ": "
-			<< "(" << s1.x() << ", " << s1.y() << ", " << s1.z() << ")" << "|"
-			<< "(" << s2.x() << ", " << s2.y() << ", " << s2.z() << ")" << "|"
+			<< "(" << s1.x() << ", " << s1.y() << ", " << s1.z() << ")" << " | "
+			<< "(" << s2.x() << ", " << s2.y() << ", " << s2.z() << ")" << " | "
 			<< "(" << s3.x() << ", " << s3.y() << ", " << s3.z() << ")" << std::endl;
 
 		compteur++;
